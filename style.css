@@ -14,6 +14,6 @@
   width: calc(700px / 8);
 }
 
-#grid div:hover {
+.blackHover {
   background-color: black;
 }
