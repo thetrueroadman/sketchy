@@ -12,5 +12,8 @@
 #grid div {
   height: calc(700px / 8);
   width: calc(700px / 8);
+}
 
+#grid div:hover {
+  background-color: black;
 }
