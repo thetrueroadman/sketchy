@@ -17,3 +17,14 @@
 .blackHover {
   background-color: black;
 }
+
+#contentFlex {
+  display: flex;
+}
+
+#options {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
