@@ -1,6 +1,8 @@
 const grid = document.querySelector("#grid");
-let gridWidth = 8;
+const slider = document.querySelector("#rangeSlider");
+
 function createGrid() {
+  let gridWidth = document.getElementById("rangeSlider").value;
   for (let i = 0; i < (gridWidth * gridWidth); i++) {
     const square = document.createElement("div");
     square.className = "squareDiv";
@@ -14,11 +16,19 @@ function createGrid() {
 
 createGrid();
 
-const resetBtn = document.getElementById("resetBtn");
-resetBtn.addEventListener("click", e => {
+function clearGrid() {
   let elements = document.getElementsByClassName("squareDiv");
-  while(elements.length > 0){
+  while (elements.length > 0) {
     elements[0].parentNode.removeChild(elements[0]);
   }
+}
+const resetBtn = document.getElementById("resetBtn");
+resetBtn.addEventListener("click", e => {
+  clearGrid();
   createGrid();
+})
+
+const applyBtn = document.getElementById("applyBtn");
+applyBtn.addEventListener("click", e => {
+  clearGrid();
 })
