@@ -9,8 +9,7 @@ function createGrid() {
     square.className = "squareDiv";
     square.addEventListener("mouseover", function(event) {
       event.target.style.backgroundColor = 'black';
-    })
-    square.innerHTML = "cup";
+    });
     square.style.width = `${gridCalc}vmin`;
     square.style.width = `${gridCalc}vmin`;
     grid.appendChild(square);
