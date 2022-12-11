@@ -3,6 +3,7 @@ const slider = document.querySelector("#rangeSlider");
 
 function createGrid() {
   let gridWidth = document.getElementById("rangeSlider").value;
+  let gridCalc = 75 / gridWidth;
   for (let i = 0; i < (gridWidth * gridWidth); i++) {
     const square = document.createElement("div");
     square.className = "squareDiv";
@@ -10,8 +11,11 @@ function createGrid() {
       event.target.style.backgroundColor = 'black';
     })
     square.innerHTML = "cup";
+    square.style.width = `${gridCalc}vmin`;
+    square.style.width = `${gridCalc}vmin`;
     grid.appendChild(square);
   }
+
 }
 
 createGrid();

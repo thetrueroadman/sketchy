@@ -8,11 +8,6 @@
   flex-wrap: wrap;
 }
 
-#grid div {
-  height: calc(75vmin / 8);
-  width: calc(75vmin / 8);
-}
-
 .blackHover {
   background-color: black;
 }
