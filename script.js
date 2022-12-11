@@ -31,4 +31,5 @@ resetBtn.addEventListener("click", e => {
 const applyBtn = document.getElementById("applyBtn");
 applyBtn.addEventListener("click", e => {
   clearGrid();
+  createGrid();
 })
